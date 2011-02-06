@@ -80,7 +80,7 @@ static NSUInteger random_below(NSUInteger n) {
 	for(int i=0;i<max;i++) {		
 		NSArray *scraper = [shuffledScrapers objectAtIndex:i];
 		
-		DLog("Attempting to scrape lyrics from %@...",[scraper objectAtIndex:2]);
+		DLog(@"Attempting to scrape lyrics from %@...",[scraper objectAtIndex:2]);
 		NSString *result = [self performSelector:NSSelectorFromString([scraper objectAtIndex:2])];
 		
 		if(result) {

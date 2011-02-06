@@ -48,6 +48,7 @@
 		4C0DD46B12E28120005670A2 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0DD46A12E28120005670A2 /* ScriptingBridge.framework */; };
 		4C0DD48712E28183005670A2 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0DD48612E28183005670A2 /* Controller.m */; };
 		4C332AD412FA224E00651F67 /* ColorLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C332AD212FA224E00651F67 /* ColorLog.m */; };
+		4C334D6C12FE4A3200AB2089 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE7A012FE1DE1005B33B3 /* Tests.m */; };
 		4C33E2AB12E3BBDF00EB2080 /* LyricRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C33E2AA12E3BBDF00EB2080 /* LyricRequest.m */; };
 		4C33E44E12E4A0DB00EB2080 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C33E44D12E4A0DB00EB2080 /* background.png */; };
 		4C33E47912E4A5D600EB2080 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C33E47812E4A5D600EB2080 /* Icon.icns */; };
@@ -566,6 +567,7 @@
 				4C0A540112FE460100318BBD /* ASIHTTPRequest.m in Sources */,
 				4C0A540212FE460100318BBD /* ASIInputStream.m in Sources */,
 				4C0A540312FE460100318BBD /* ASINetworkQueue.m in Sources */,
+				4C334D6C12FE4A3200AB2089 /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,6 +825,7 @@
 				4C0A53E612FE435300318BBD /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Lyric Finder" */ = {
 			isa = XCConfigurationList;
