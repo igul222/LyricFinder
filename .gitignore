@@ -8,6 +8,8 @@
 *.perspective
 *.perspectivev3
 *.pbxuser
+xcuserdata
+*.xcworkspace
 
 # build products
 build/
