@@ -40,7 +40,8 @@
 }
 
 +(NSArray *)scrapers {
-	return [NSArray arrayWithObjects:@"LyricWiki",@"LyricsDotCom",@"HindiLyrix",@"HeuristicScraper",@"LyricsMode",nil];
+	return [NSArray arrayWithObjects:@"LyricWiki",@"LyricsMode",@"LyricsDotCom",@"HindiLyrix",
+            @"HeuristicScraper",nil];
 }
 
 #pragma mark -
