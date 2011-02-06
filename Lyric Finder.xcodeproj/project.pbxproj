@@ -38,6 +38,10 @@
 		4C51169B12F916B400B0F694 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51169A12F916B400B0F694 /* RegexKitLite.m */; };
 		4C5116B312F9173E00B0F694 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5116B212F9173E00B0F694 /* SystemConfiguration.framework */; };
 		4C5116BA12F9177800B0F694 /* LyricDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5116B912F9177800B0F694 /* LyricDownloader.m */; };
+		4C5EE79212FE1DE1005B33B3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5EE79112FE1DE1005B33B3 /* Cocoa.framework */; };
+		4C5EE79C12FE1DE1005B33B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EE79A12FE1DE1005B33B3 /* InfoPlist.strings */; };
+		4C5EE79F12FE1DE1005B33B3 /* Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EE79E12FE1DE1005B33B3 /* Tests.h */; };
+		4C5EE7A112FE1DE1005B33B3 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE7A012FE1DE1005B33B3 /* Tests.m */; };
 		4CE1AE8A12FB67BA00B742D5 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE1AE8712FB67BA00B742D5 /* start.png */; };
 		4CE1AE8B12FB67BA00B742D5 /* start_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE1AE8812FB67BA00B742D5 /* start_pressed.png */; };
 		4CE1AE8C12FB67BA00B742D5 /* start_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE1AE8912FB67BA00B742D5 /* start_hover.png */; };
@@ -59,6 +63,10 @@
 		4C0DD46A12E28120005670A2 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		4C0DD48512E28183005670A2 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		4C0DD48612E28183005670A2 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		4C13E86512FE0D3000EE41B5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4C13E86812FE0D3000EE41B5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4C13E86912FE0D3000EE41B5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4C13E86A12FE0D3000EE41B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C332AD212FA224E00651F67 /* ColorLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorLog.m; sourceTree = "<group>"; };
 		4C332AD312FA224E00651F67 /* ColorLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorLog.h; sourceTree = "<group>"; };
 		4C33E2A912E3BBDF00EB2080 /* LyricRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricRequest.h; sourceTree = "<group>"; };
@@ -108,6 +116,16 @@
 		4C5116B212F9173E00B0F694 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4C5116B812F9177800B0F694 /* LyricDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricDownloader.h; sourceTree = "<group>"; };
 		4C5116B912F9177800B0F694 /* LyricDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricDownloader.m; sourceTree = "<group>"; };
+		4C5EE78F12FE1DE1005B33B3 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5EE79112FE1DE1005B33B3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4C5EE79412FE1DE1005B33B3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4C5EE79512FE1DE1005B33B3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4C5EE79612FE1DE1005B33B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C5EE79912FE1DE1005B33B3 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		4C5EE79B12FE1DE1005B33B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C5EE79D12FE1DE1005B33B3 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		4C5EE79E12FE1DE1005B33B3 /* Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tests.h; sourceTree = "<group>"; };
+		4C5EE7A012FE1DE1005B33B3 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		4CE1AE8712FB67BA00B742D5 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		4CE1AE8812FB67BA00B742D5 /* start_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_pressed.png; sourceTree = "<group>"; };
 		4CE1AE8912FB67BA00B742D5 /* start_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_hover.png; sourceTree = "<group>"; };
@@ -118,6 +136,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4C5EE78B12FE1DE1005B33B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5EE79212FE1DE1005B33B3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,30 +190,27 @@
 		29B97314FDCFA39411CA2CEA /* Lyrical */ = {
 			isa = PBXGroup;
 			children = (
-				4C5115A012F9158400B0F694 /* Dependencies */,
-				4C33E47812E4A5D600EB2080 /* Icon.icns */,
-				4C33E44D12E4A0DB00EB2080 /* background.png */,
-				4CE1AE8712FB67BA00B742D5 /* start.png */,
-				4CE1AE8812FB67BA00B742D5 /* start_pressed.png */,
-				4CE1AE8912FB67BA00B742D5 /* start_hover.png */,
-				080E96DDFE201D6D7F000001 /* Classes */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
-				29B97323FDCFA39411CA2CEA /* Frameworks */,
-				19C28FACFE9D520D11CA2CBB /* Products */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				4C5EE79712FE1DE1005B33B3 /* Tests */,
+				29B97315FDCFA39411CA2CEA /* Other Stuff */,
 			);
 			name = Lyrical;
 			sourceTree = "<group>";
 		};
-		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+		29B97315FDCFA39411CA2CEA /* Other Stuff */ = {
 			isa = PBXGroup;
 			children = (
+				4C5EE7A612FE1DEC005B33B3 /* Testing Support */,
+				4C5115A012F9158400B0F694 /* Dependencies */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				4C332AD212FA224E00651F67 /* ColorLog.m */,
 				4C332AD312FA224E00651F67 /* ColorLog.h */,
 				256AC3F00F4B6AF500CF3369 /* Lyric Finder_Prefix.pch */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
-			name = "Other Sources";
+			name = "Other Stuff";
 			sourceTree = "<group>";
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
@@ -196,6 +219,11 @@
 				8D1107310486CEB800E47090 /* Lyric Finder-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				4C33E47812E4A5D600EB2080 /* Icon.icns */,
+				4C33E44D12E4A0DB00EB2080 /* background.png */,
+				4CE1AE8712FB67BA00B742D5 /* start.png */,
+				4CE1AE8812FB67BA00B742D5 /* start_pressed.png */,
+				4CE1AE8912FB67BA00B742D5 /* start_hover.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -210,8 +238,20 @@
 				4C51169512F916A200B0F694 /* libxml2.2.dylib */,
 				4C51169712F916A200B0F694 /* libz.1.2.3.dylib */,
 				4C5116B212F9173E00B0F694 /* SystemConfiguration.framework */,
+				4C13E86512FE0D3000EE41B5 /* Cocoa.framework */,
+				4C13E86712FE0D3000EE41B5 /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C13E86712FE0D3000EE41B5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C13E86812FE0D3000EE41B5 /* AppKit.framework */,
+				4C13E86912FE0D3000EE41B5 /* CoreData.framework */,
+				4C13E86A12FE0D3000EE41B5 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		4C5115A012F9158400B0F694 /* Dependencies */ = {
@@ -282,9 +322,76 @@
 			name = TouchJSON;
 			sourceTree = "<group>";
 		};
+		4C5EE79012FE1DE1005B33B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C5EE79112FE1DE1005B33B3 /* Cocoa.framework */,
+				4C5EE79312FE1DE1005B33B3 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C5EE79312FE1DE1005B33B3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C5EE79412FE1DE1005B33B3 /* AppKit.framework */,
+				4C5EE79512FE1DE1005B33B3 /* CoreData.framework */,
+				4C5EE79612FE1DE1005B33B3 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4C5EE79712FE1DE1005B33B3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4C5EE79E12FE1DE1005B33B3 /* Tests.h */,
+				4C5EE7A012FE1DE1005B33B3 /* Tests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		4C5EE79812FE1DE1005B33B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C5EE79912FE1DE1005B33B3 /* Tests-Info.plist */,
+				4C5EE79A12FE1DE1005B33B3 /* InfoPlist.strings */,
+				4C5EE79D12FE1DE1005B33B3 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		4C5EE7A612FE1DEC005B33B3 /* Testing Support */ = {
+			isa = PBXGroup;
+			children = (
+				4C5EE79812FE1DE1005B33B3 /* Supporting Files */,
+				4C5EE78F12FE1DE1005B33B3 /* Tests.octest */,
+				4C5EE79012FE1DE1005B33B3 /* Frameworks */,
+			);
+			name = "Testing Support";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4C5EE78E12FE1DE1005B33B3 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5EE7A212FE1DE1005B33B3 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				4C5EE78A12FE1DE1005B33B3 /* Sources */,
+				4C5EE78B12FE1DE1005B33B3 /* Frameworks */,
+				4C5EE78C12FE1DE1005B33B3 /* Resources */,
+				4C5EE78D12FE1DE1005B33B3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 4C5EE78F12FE1DE1005B33B3 /* Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		8D1107260486CEB800E47090 /* Lyric Finder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Lyric Finder" */;
@@ -317,17 +424,29 @@
 				Japanese,
 				French,
 				German,
+				en,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Lyrical */;
+			productRefGroup = 29B97314FDCFA39411CA2CEA /* Lyrical */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* Lyric Finder */,
+				4C5EE78E12FE1DE1005B33B3 /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4C5EE78C12FE1DE1005B33B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5EE79C12FE1DE1005B33B3 /* InfoPlist.strings in Resources */,
+				4C5EE79F12FE1DE1005B33B3 /* Tests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,7 +463,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C5EE78D12FE1DE1005B33B3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		4C5EE78A12FE1DE1005B33B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5EE7A112FE1DE1005B33B3 /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,6 +537,14 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
+		4C5EE79A12FE1DE1005B33B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5EE79B12FE1DE1005B33B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -405,6 +556,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
 				VALID_ARCHS = "i386 x86_64";
@@ -426,6 +578,85 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = "Lyric Finder";
+			};
+			name = "App Store";
+		};
+		4C5EE7A312FE1DE1005B33B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(CONFIGURATION_BUILD_DIR)/Lyric Finder.app/Contents/MacOS/Lyric Finder";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4C5EE7A412FE1DE1005B33B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(CONFIGURATION_BUILD_DIR)/Lyric Finder.app/Contents/MacOS/Lyric Finder";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		4C5EE7A512FE1DE1005B33B3 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(CONFIGURATION_BUILD_DIR)/Lyric Finder.app/Contents/MacOS/Lyric Finder";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
 			};
 			name = "App Store";
 		};
@@ -474,6 +705,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
@@ -487,6 +719,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
 			};
@@ -495,6 +728,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4C5EE7A212FE1DE1005B33B3 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5EE7A312FE1DE1005B33B3 /* Debug */,
+				4C5EE7A412FE1DE1005B33B3 /* Release */,
+				4C5EE7A512FE1DE1005B33B3 /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Lyric Finder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
