@@ -21,4 +21,6 @@
 +(NSArray *)searchers;
 +(NSArray *)scrapers;
 
++(NSString *)downloadURL:(NSURL *)url;
+
 @end

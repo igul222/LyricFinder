@@ -54,7 +54,7 @@ NSString* AllowXcodeColors(NSString* str,...)
 }
 
 NSString *NSLogColorFromInput(NSString *someString) {
-	NSArray *colors = [NSArray arrayWithObjects:LCL_BLUE,LCL_CYAN,LCL_GREEN,LCL_YELLOW,nil];
+	NSArray *colors = [NSArray arrayWithObjects:LCL_RED,LCL_MAGENTA,LCL_BLUE,LCL_CYAN,LCL_GREEN,LCL_YELLOW,nil];
 	NSString *result = [colors objectAtIndex:([someString hash]%[colors count])];
 	return result;
 }

@@ -380,18 +380,18 @@
 				4C334D7512FE521000AB2089 /* LyricSite.h */,
 				4C334D7112FE51FE00AB2089 /* LyricWiki.h */,
 				4C334D7212FE51FE00AB2089 /* LyricWiki.m */,
+				4CD43A9812FE691200C7DF0C /* Bing.h */,
+				4CD43A9912FE691300C7DF0C /* Bing.m */,
+				4CE3B86B12FF06B9009383A0 /* LyricsMode.h */,
+				4CE3B86C12FF06B9009383A0 /* LyricsMode.m */,
 				4C8852EB12FE621C002B6586 /* LyricsDotCom.h */,
 				4C8852EC12FE621C002B6586 /* LyricsDotCom.m */,
 				4C49EFC312FE7B4C008DB421 /* HindiLyrix.h */,
 				4C49EFC412FE7B4C008DB421 /* HindiLyrix.m */,
 				4C8852EF12FE655C002B6586 /* HeuristicScraper.h */,
 				4C8852F012FE655E002B6586 /* HeuristicScraper.m */,
-				4CD43A9812FE691200C7DF0C /* Bing.h */,
-				4CD43A9912FE691300C7DF0C /* Bing.m */,
 				4CE1AED212FB774200B742D5 /* NSString+LyricFinder.h */,
 				4CE1AED312FB774200B742D5 /* NSString+LyricFinder.m */,
-				4CE3B86B12FF06B9009383A0 /* LyricsMode.h */,
-				4CE3B86C12FF06B9009383A0 /* LyricsMode.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";

@@ -7,6 +7,7 @@
 //
 
 #import "LyricsDotCom.h"
+#import "LyricDownloader.h"
 #import "RegexKitLite.h"
 #import "ASIHTTPRequest.h"
 #import "HTMLParser.h"
@@ -38,12 +39,11 @@
 }
 
 +(NSString *)scrapeURL:(NSURL *)url {
-	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-	
-	[request startSynchronous];
-	if([request error]) return nil;
-	
-	HTMLParser *parser = [[HTMLParser alloc] initWithString:[request responseString] error:nil];
+    NSString *response = [LyricDownloader downloadURL:url];
+    if(response==nil)
+        return nil;
+    
+	HTMLParser *parser = [[HTMLParser alloc] initWithString:response error:nil];
 	HTMLNode *node = [[parser body] findChildWithAttribute:@"id" matchingName:@"lyric_space" allowPartial:NO];
 	
 	if([node visibleContents]==nil)

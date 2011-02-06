@@ -7,6 +7,7 @@
 //
 
 #import "LyricsMode.h"
+#import "LyricDownloader.h"
 #import "ASIHTTPRequest.h"
 #import "HTMLParser.h"
 #import "RegexKitLite.h"
@@ -22,12 +23,11 @@
 }
 
 +(NSString *)scrapeURL:(NSURL *)url {
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-	
-	[request startSynchronous];
-	if([request error]) return nil;
-	
-	HTMLParser *parser = [[HTMLParser alloc] initWithString:[request responseString] error:nil];
+    NSString *response = [LyricDownloader downloadURL:url];
+    if(response==nil)
+        return nil;
+    
+	HTMLParser *parser = [[HTMLParser alloc] initWithString:response error:nil];
     NSString *pageText = [[parser body] rawContents];
     
     NSArray *parts = [pageText componentsSeparatedByString:@"<!-- SONG LYRICS -->"];

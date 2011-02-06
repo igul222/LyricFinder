@@ -7,6 +7,7 @@
 //
 
 #import "HeuristicScraper.h"
+#import "LyricDownloader.h"
 #import "ASIHTTPRequest.h"
 #import "RegexKitLite.h"
 #import "HTMLParser.h"
@@ -43,42 +44,49 @@
 }
 
 +(NSString *)scrapeURL:(NSURL *)url {
-    int port = [[url port] intValue];
-    if(port != 80 && port != 0) {
-        DLog(@"Requested page is not on port 80; skipping.");
+    NSString *response = [LyricDownloader downloadURL:url];
+    if(response==nil)
         return nil;
-    }
     
-    DLog(@"Downloading page %@...",[url absoluteString]);
-	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-	[request startSynchronous];
-    
-	if([request error])
-        return nil;
-	
-    DLog(@"Downloaded page: %i chars long...",[[request responseString] length]);
-    
-	HTMLParser *parser = [[HTMLParser alloc] initWithString:[request responseString] error:nil];
+	HTMLParser *parser = [[HTMLParser alloc] initWithString:response error:nil];
 	NSString *pageText = [[parser body] allVisibleContents];
     
-	NSArray *parts = [pageText componentsSeparatedByRegex:@"send \".+\" ringtone to your cell" options:RKLCaseless range:NSMakeRange(0, [pageText length]) error:nil];
-	
-	// the lyrics are most likely between the two ringtone ads, so make sure there are exactly two of them.
-	DLog(@"Page contaings %i ringtone ads...",[parts count]-1);
-    if([parts count]!=3)
-		return nil;
-	
-	NSString *lyrics = [parts objectAtIndex:1];
-	lyrics = [lyrics stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-	
-    DLog(@"Found what appear to be lyrics: %@",[lyrics preview]);
+    NSString *lyrics = nil;
     
-	if([lyrics length]<50)
-		return nil;
-	else if([lyrics rangeOfString:@"don't have the lyrics"].location != NSNotFound)
-		return nil;
-	else
-		return lyrics;
+    // look for plaintext ringtone ads
+    NSArray *parts = [pageText componentsSeparatedByRegex:@"send \".+\" ringtone to your cell" options:RKLCaseless range:NSMakeRange(0, [pageText length]) error:nil];
+	DLog(@"Page contaings %i plaintext ringtone ads...",[parts count]-1);
+    if([parts count]==3) {
+        lyrics = [parts objectAtIndex:1];
+        goto lyricsFound;
+    }
+    
+    // look for tonefuse RTM javascript ads
+    pageText = [[parser body] rawContents];
+	
+    // this actually matches a munged-up form of the script tag; libxml2 has trouble parsing the correct form.
+    NSString *regex = @"<script\\s+[^>]*type\\s*=\\s*\"text\\/javascript\"[^>]*>\\s*document.write\\(\\s*'<scr'\\s*\\+\\s*'ipt\\s*type\\s*=\\s*\"text\\/javascript\"\\s*src\\s*=\\s*\"http:\\/\\/tonefuse.s3.amazonaws.com\\/clientjs\\/[a-z0-9]+-rtm.js\"\\s*>\\s*'\\s*\\+\\s*'ipt>'\\);\\s*<\\/script>";
+    parts = [pageText componentsSeparatedByRegex:regex options:RKLCaseless range:NSMakeRange(0, [pageText length]) error:nil];
+    DLog(@"Page contains %i tonefuse ads...",[parts count]-1);
+    if([parts count]==3) {
+        parser = [[HTMLParser alloc] initWithString:[parts objectAtIndex:1] error:nil];
+        lyrics = [[parser doc] allVisibleContents]; 
+        goto lyricsFound;
+    }
+        
+    // lyrics still not found?
+    DLog(@"Found no lyrics on the page.");
+    return nil;
+    
+lyricsFound:
+    DLog(@"Found what appear to be lyrics: %@",[lyrics preview]);
+    lyrics = [lyrics stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    if([lyrics length]<50)
+        return nil;
+    else if([lyrics rangeOfString:@"don't have the lyrics"].location != NSNotFound)
+        return nil;
+    else
+        return lyrics;
 }
 
 @end

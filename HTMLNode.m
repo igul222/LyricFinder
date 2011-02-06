@@ -307,6 +307,8 @@ NSString * getAttributeNamed(xmlNode * node, const char * nameStr)
 }
 
 int node_is_a(xmlNode *node, char *name) {
+    if(node==NULL)
+        return 0;
 	char *node_name = (char *)(node->name);
 	return (node_name && strcmp(node_name,name)==0);
 }
@@ -315,7 +317,7 @@ NSString *visibleContentsForLeafNode(xmlNode *leaf) {
 	if(node_is_a(leaf, "br")) {
 		// br tags map to newlines
 		return @"\n";
-	} else if(leaf->content && (node_is_a(leaf->parent, "pre") || node_is_a(leaf->parent->parent, "pre"))) {
+	} else if(leaf->content && (node_is_a(leaf->parent, "pre") || (leaf->parent && node_is_a(leaf->parent->parent, "pre")))) {
         return [NSString stringWithCString:(const char *)leaf->content encoding:NSUTF8StringEncoding];
     } else if(node_is_a(leaf, "comment")) {
 		// some types aren't normally visible. for those, return nothing.

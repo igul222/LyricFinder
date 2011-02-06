@@ -7,6 +7,7 @@
 //
 
 #import "LyricWiki.h"
+#import "LyricDownloader.h"
 #import "NSString+LyricFinder.h"
 #import "ASIHTTPRequest.h"
 #import "HTMLParser.h"
@@ -29,13 +30,12 @@
 	return [LyricWiki scrapeURL:[NSURL URLWithString:url]];
 }
 
-+(NSString *)scrapeURL:(NSURL *)url {
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-	
-	[request startSynchronous];
-	if([request error]) return nil;
-	    
-	HTMLParser *parser = [[HTMLParser alloc] initWithString:[request responseString] error:nil];
++(NSString *)scrapeURL:(NSURL *)url {	    
+    NSString *response = [LyricDownloader downloadURL:url];
+    if(response==nil)
+        return nil;
+    
+	HTMLParser *parser = [[HTMLParser alloc] initWithString:response error:nil];
 	HTMLNode *node = [[parser body] findChildWithAttribute:@"class" matchingName:@"lyricbox" allowPartial:NO];
         
 	if(node==nil)

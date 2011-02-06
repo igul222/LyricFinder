@@ -10,7 +10,7 @@
 
 @interface Tests : GHTestCase {
 @private
-
+    NSString *macroStr;
 }
 
 @end

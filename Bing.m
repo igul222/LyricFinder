@@ -7,6 +7,7 @@
 //
 
 #import "Bing.h"
+#import "LyricDownloader.h"
 #import "RegexKitLite.h"
 #import "ASIHTTPRequest.h"
 #import "NSString+LyricFinder.h"
@@ -38,7 +39,10 @@
 	
 	DLog(@"Getting Bing results with query URL: %@",bingURL);
 	
-	NSString *bingResponse = [NSString stringWithContentsOfURL:[NSURL URLWithString:bingURL] encoding:NSUTF8StringEncoding error:nil];
+    NSString *bingResponse = [LyricDownloader downloadURL:[NSURL URLWithString:bingURL]];
+    if(bingResponse==nil)
+        return nil;
+    
 	NSDictionary *bingJSON = [NSDictionary dictionaryWithJSONString:bingResponse error:nil];
 	
 	NSArray *results = [[[bingJSON objectForKey:@"SearchResponse"] objectForKey:@"Web"] objectForKey:@"Results"];

@@ -8,6 +8,7 @@
 
 #import "LyricDownloader.h"
 #import "LyricSite.h"
+#import "ASIHTTPRequest.h"
 #import "NSString+LyricFinder.h"
 
 @implementation LyricDownloader
@@ -58,6 +59,27 @@
     if (title != newTitle) {
         [title release];
         title = [[newTitle stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] copy];
+    }
+}
+
++(NSString *)downloadURL:(NSURL *)url {
+    int port = [[url port] intValue];
+    if(port != 0 && port != 80) {
+        DLog(@"URL is port %i (not 80); not downloading.",port);
+        return nil;
+    }
+    
+    ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:url];
+    [request setTimeOutSeconds:5.0];
+    [request addRequestHeader:@"User-Agent" value:@"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13"];
+    
+    [request startSynchronous];
+    
+    if([request error] != nil) {
+        DLog(@"Error downloading URL (%@): {%@: %@}",[url absoluteString],[request error],[[request error] userInfo]);
+        return nil;
+    } else {
+        return [request responseString];
     }
 }
 

@@ -22,7 +22,7 @@
 #define FAKE_ARTIST @"ArtistThatClearlyDoesNotExist"
 #define FAKE_TITLE @"TitleThatClearlyDoesNotExist"
 
-#define ASSERT_INCLUDE(haystack, needle) GHAssertTrue([haystack rangeOfString:needle].location != NSNotFound, [NSString stringWithFormat: @"String didn't contain %@!",needle]);
+#define ASSERT_INCLUDE(haystack, needle) macroStr = haystack; GHAssertTrue(macroStr && [macroStr rangeOfString:needle].location != NSNotFound, [NSString stringWithFormat: @"String didn't contain %@!",needle])
 #define ASSERT_NIL(object) GHAssertNil(object, @"Object is not nil!");
 
 #define SEARCHER_TEST(searcher) ASSERT_INCLUDE([searcher searchForTitle:TEST_TITLE artist:TEST_ARTIST], TEST_LYRIC);
@@ -61,6 +61,7 @@
 }
 
 -(void)testHeuristicScraper {
+    
     NSString *urlString = @"http://www.lyrics007.com/U2%20Lyrics/One%20Lyrics.html";    
     ASSERT_INCLUDE([HeuristicScraper scrapeURL:[NSURL URLWithString:urlString]], @"getting better");
 
