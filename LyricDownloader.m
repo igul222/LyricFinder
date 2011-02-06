@@ -35,11 +35,12 @@
 #pragma mark Website scrapers
 
 +(NSArray *)searchers {
-    return [NSArray arrayWithObjects:@"LyricsDotCom",@"LyricWiki",@"Bing",nil];
+    // LyricsDotCom can search, but it's too slow to be useful, so we use it only as a scraper
+    return [NSArray arrayWithObjects:@"LyricWiki",@"Bing",nil];
 }
 
 +(NSArray *)scrapers {
-	return [NSArray arrayWithObjects:@"LyricWiki",@"LyricsDotCom",@"HeuristicScraper",nil];
+	return [NSArray arrayWithObjects:@"LyricWiki",@"LyricsDotCom",@"HindiLyrix",@"HeuristicScraper",@"LyricsMode",nil];
 }
 
 #pragma mark -

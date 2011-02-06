@@ -315,7 +315,9 @@ NSString *visibleContentsForLeafNode(xmlNode *leaf) {
 	if(node_is_a(leaf, "br")) {
 		// br tags map to newlines
 		return @"\n";
-	} else if(node_is_a(leaf, "comment")) {
+	} else if(leaf->content && (node_is_a(leaf->parent, "pre") || node_is_a(leaf->parent->parent, "pre"))) {
+        return [NSString stringWithCString:(const char *)leaf->content encoding:NSUTF8StringEncoding];
+    } else if(node_is_a(leaf, "comment")) {
 		// some types aren't normally visible. for those, return nothing.
 		return @"";
 	} else if(node_is_a(leaf->parent, "script")) {

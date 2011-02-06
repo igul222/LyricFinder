@@ -8,7 +8,7 @@
 
 #import "LyricFinderAppDelegate.h"
 #import "Controller.h"
-#import "NSString+IG_URLEscape.h"
+#import "NSString+LyricFinder.h"
 #import "ASIHTTPRequest.h"
 
 @interface LyricFinderAppDelegate ()
@@ -26,6 +26,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	[window center];
+    
+    [ASIHTTPRequest setDefaultTimeOutSeconds:10];
 	
 	controller = [[Controller alloc] init];
 	controller.delegate = self;

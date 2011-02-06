@@ -10,6 +10,7 @@
 #import "RegexKitLite.h"
 #import "ASIHTTPRequest.h"
 #import "HTMLParser.h"
+#import "NSString+LyricFinder.h"
 
 @implementation LyricsDotCom
 
@@ -33,7 +34,7 @@
 	
 	NSString *url = [NSString stringWithFormat:@"http://www.lyrics.com/%@-lyrics-%@.html",formattedTitle,formattedArtist];
 	
-	return [self scrapeURL:[NSURL URLWithString:url]];
+    return [self scrapeURL:[NSURL URLWithString:url]];
 }
 
 +(NSString *)scrapeURL:(NSURL *)url {

@@ -11,7 +11,9 @@
 #import "LyricWiki.h"
 #import "LyricsDotCom.h"
 #import "Bing.h"
+#import "HindiLyrix.h"
 #import "HeuristicScraper.h"
+#import "LyricsMode.h"
 
 #define TEST_ARTIST @"U2"
 #define TEST_TITLE @"One"
@@ -51,11 +53,27 @@
     NEGATIVE_SEARCHER_TEST(Bing);
 }
 
--(void)testHeuristicScraper {
-    NSString *urlString = @"http://www.lyrics007.com/U2%20Lyrics/One%20Lyrics.html";
+-(void)testHindiLyrix {
+    NSString *urlString = @"http://www.hindilyrix.com/songs/get_song_Wheres%20The%20Party%20Tonight.html";
     NSURL *url = [NSURL URLWithString:urlString];
     
-    ASSERT_INCLUDE([HeuristicScraper scrapeURL:url], @"getting better");
+    ASSERT_INCLUDE([HindiLyrix scrapeURL:url], @"naach all night");
+}
+
+-(void)testHeuristicScraper {
+    NSString *urlString = @"http://www.lyrics007.com/U2%20Lyrics/One%20Lyrics.html";    
+    ASSERT_INCLUDE([HeuristicScraper scrapeURL:[NSURL URLWithString:urlString]], @"getting better");
+
+    urlString = @"http://www.lyrics007.com/NonexistentArtist%20Lyrics/TerribleSong%20Lyrics.html";    
+    ASSERT_NIL([HeuristicScraper scrapeURL:[NSURL URLWithString:urlString]]);
+}
+
+-(void)testLyricsMode {
+    NSString *urlString = @"http://www.lyricsmode.com/lyrics/u/u2/one.html";
+    ASSERT_INCLUDE([LyricsMode scrapeURL:[NSURL URLWithString:urlString]], @"getting better");
+
+    urlString = @"http://www.lyricsmode.com/lyrics/n/nonexistentartist/terriblesong.html";
+    ASSERT_NIL([LyricsMode scrapeURL:[NSURL URLWithString:urlString]]);
 }
 
 @end

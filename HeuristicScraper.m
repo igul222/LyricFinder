@@ -43,9 +43,16 @@
 }
 
 +(NSString *)scrapeURL:(NSURL *)url {
+    int port = [[url port] intValue];
+    if(port != 80 && port != 0) {
+        DLog(@"Requested page is not on port 80; skipping.");
+        return nil;
+    }
+    
+    DLog(@"Downloading page %@...",[url absoluteString]);
 	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-	
 	[request startSynchronous];
+    
 	if([request error])
         return nil;
 	
