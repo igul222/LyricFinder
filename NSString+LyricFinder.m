@@ -6,12 +6,12 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "NSString+IG_URLEscape.h"
+#import "NSString+LyricFinder.h"
 
 
-@implementation NSString (IG_URLEscape)
+@implementation NSString (LyricFinder)
 
--(NSString *)urlEncoded {
+-(NSString *)URLEncoded {
 	NSString *encodedString = (NSString *)CFURLCreateStringByAddingPercentEscapes(
 																				  NULL,
 																				  (CFStringRef)self,
@@ -19,6 +19,14 @@
 																				  (CFStringRef)@"!*'();:@&=+$,/?%#[]",
 																				  kCFStringEncodingUTF8);
 	return encodedString;	
+}
+
+-(NSString *)preview {
+    if([self length] < 20)
+        return self;
+    
+    NSString *result = [NSString stringWithFormat:@"%@%@",[self substringToIndex:15],@"..."];
+    return [result stringByReplacingOccurrencesOfString:@"\n" withString:@"\\n"];
 }
 
 @end

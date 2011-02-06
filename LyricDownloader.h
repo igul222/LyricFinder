@@ -18,4 +18,7 @@
 
 -(NSString *)findLyrics;
 
++(NSArray *)searchers;
++(NSArray *)scrapers;
+
 @end

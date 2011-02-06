@@ -9,6 +9,9 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface NSString (IG_URLEscape)
--(NSString *)urlEncoded;
+@interface NSString (LyricFinder)
+
+-(NSString *)URLEncoded;
+-(NSString *)preview;
+
 @end
