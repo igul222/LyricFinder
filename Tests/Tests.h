@@ -7,8 +7,9 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import <GHUnit/GHUnit.h>
 
-@interface Tests : SenTestCase {
+@interface Tests : GHTestCase {
 @private
 
 }

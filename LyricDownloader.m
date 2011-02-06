@@ -76,7 +76,7 @@ static NSUInteger random_below(NSUInteger n) {
 	NSMutableArray *shuffledScrapers = [NSMutableArray arrayWithArray:[self scrapers]];
 	[shuffledScrapers shuffle];
 	
-	int max = ([shuffledScrapers count] > 3 ? 3 : [shuffledScrapers count]);
+	NSUInteger max = ([shuffledScrapers count] > 3 ? 3 : [shuffledScrapers count]);
 	for(int i=0;i<max;i++) {		
 		NSArray *scraper = [shuffledScrapers objectAtIndex:i];
 		

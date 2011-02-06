@@ -9,6 +9,40 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* LyricFinderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* LyricFinderAppDelegate.m */; };
+		4C0A53CC12FE435200318BBD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0A53CB12FE435200318BBD /* Cocoa.framework */; };
+		4C0A53D612FE435300318BBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A53D412FE435300318BBD /* InfoPlist.strings */; };
+		4C0A53DC12FE435300318BBD /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A53DA12FE435300318BBD /* Credits.rtf */; };
+		4C0A53DF12FE435300318BBD /* TestsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A53DE12FE435300318BBD /* TestsAppDelegate.m */; };
+		4C0A53E212FE435300318BBD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A53E012FE435300318BBD /* MainMenu.xib */; };
+		4C0A53E812FE43B100318BBD /* GHUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0A53E712FE43B100318BBD /* GHUnit.framework */; };
+		4C0A53EF12FE440900318BBD /* GHUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A53ED12FE440900318BBD /* GHUnitTestMain.m */; };
+		4C0A53F112FE448D00318BBD /* LyricRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C33E2AA12E3BBDF00EB2080 /* LyricRequest.m */; };
+		4C0A53F212FE449000318BBD /* LyricDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5116B912F9177800B0F694 /* LyricDownloader.m */; };
+		4C0A53F312FE459400318BBD /* ColorLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C332AD212FA224E00651F67 /* ColorLog.m */; };
+		4C0A53F412FE45F400318BBD /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51169A12F916B400B0F694 /* RegexKitLite.m */; };
+		4C0A53F512FE45F400318BBD /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51166112F915C500B0F694 /* CDataScanner_Extensions.m */; };
+		4C0A53F612FE45F400318BBD /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51166312F915C500B0F694 /* CDataScanner.m */; };
+		4C0A53F712FE45F400318BBD /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51166512F915C500B0F694 /* CJSONDeserializer.m */; };
+		4C0A53F812FE45F400318BBD /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51166712F915C500B0F694 /* CJSONScanner.m */; };
+		4C0A53F912FE45F400318BBD /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51166912F915C500B0F694 /* CJSONSerializer.m */; };
+		4C0A53FA12FE45F400318BBD /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51166B12F915C500B0F694 /* NSDictionary_JSONExtensions.m */; };
+		4C0A53FB12FE460100318BBD /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51168E12F9160F00B0F694 /* HTMLNode.m */; };
+		4C0A53FC12FE460100318BBD /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51169012F9160F00B0F694 /* HTMLParser.m */; };
+		4C0A53FD12FE460100318BBD /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51167412F915DD00B0F694 /* ASIDataCompressor.m */; };
+		4C0A53FE12FE460100318BBD /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51167612F915DD00B0F694 /* ASIDataDecompressor.m */; };
+		4C0A53FF12FE460100318BBD /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51167812F915DD00B0F694 /* ASIDownloadCache.m */; };
+		4C0A540012FE460100318BBD /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51167A12F915DD00B0F694 /* ASIFormDataRequest.m */; };
+		4C0A540112FE460100318BBD /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51167C12F915DD00B0F694 /* ASIHTTPRequest.m */; };
+		4C0A540212FE460100318BBD /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51168012F915DD00B0F694 /* ASIInputStream.m */; };
+		4C0A540312FE460100318BBD /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51168212F915DD00B0F694 /* ASINetworkQueue.m */; };
+		4C0A540412FE469100318BBD /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0DD46A12E28120005670A2 /* ScriptingBridge.framework */; };
+		4C0A540512FE469100318BBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0DD46212E27997005670A2 /* Foundation.framework */; };
+		4C0A540612FE469100318BBD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0DD46612E279AB005670A2 /* AppKit.framework */; };
+		4C0A540712FE469100318BBD /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C51169312F9168D00B0F694 /* CoreServices.framework */; };
+		4C0A540812FE469100318BBD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5116B212F9173E00B0F694 /* SystemConfiguration.framework */; };
+		4C0A540912FE469400318BBD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C13E86512FE0D3000EE41B5 /* Cocoa.framework */; };
+		4C0A540A12FE469C00318BBD /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C51169512F916A200B0F694 /* libxml2.2.dylib */; };
+		4C0A540B12FE469C00318BBD /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C51169712F916A200B0F694 /* libz.1.2.3.dylib */; };
 		4C0DD46312E27997005670A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0DD46212E27997005670A2 /* Foundation.framework */; };
 		4C0DD46712E279AB005670A2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0DD46612E279AB005670A2 /* AppKit.framework */; };
 		4C0DD46B12E28120005670A2 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0DD46A12E28120005670A2 /* ScriptingBridge.framework */; };
@@ -38,10 +72,6 @@
 		4C51169B12F916B400B0F694 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51169A12F916B400B0F694 /* RegexKitLite.m */; };
 		4C5116B312F9173E00B0F694 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5116B212F9173E00B0F694 /* SystemConfiguration.framework */; };
 		4C5116BA12F9177800B0F694 /* LyricDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5116B912F9177800B0F694 /* LyricDownloader.m */; };
-		4C5EE79212FE1DE1005B33B3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5EE79112FE1DE1005B33B3 /* Cocoa.framework */; };
-		4C5EE79C12FE1DE1005B33B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EE79A12FE1DE1005B33B3 /* InfoPlist.strings */; };
-		4C5EE79F12FE1DE1005B33B3 /* Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EE79E12FE1DE1005B33B3 /* Tests.h */; };
-		4C5EE7A112FE1DE1005B33B3 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5EE7A012FE1DE1005B33B3 /* Tests.m */; };
 		4CE1AE8A12FB67BA00B742D5 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE1AE8712FB67BA00B742D5 /* start.png */; };
 		4CE1AE8B12FB67BA00B742D5 /* start_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE1AE8812FB67BA00B742D5 /* start_pressed.png */; };
 		4CE1AE8C12FB67BA00B742D5 /* start_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE1AE8912FB67BA00B742D5 /* start_hover.png */; };
@@ -50,6 +80,16 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4C0A53E912FE43BB00318BBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = "Lyric Finder";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -57,6 +97,20 @@
 		256AC3D90F4B6AC300CF3369 /* LyricFinderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricFinderAppDelegate.m; sourceTree = "<group>"; };
 		256AC3F00F4B6AF500CF3369 /* Lyric Finder_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lyric Finder_Prefix.pch"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C0A53C812FE435200318BBD /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0A53CB12FE435200318BBD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4C0A53CE12FE435200318BBD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4C0A53CF12FE435200318BBD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4C0A53D012FE435200318BBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C0A53D312FE435300318BBD /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		4C0A53D512FE435300318BBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C0A53D712FE435300318BBD /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		4C0A53DB12FE435300318BBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4C0A53DD12FE435300318BBD /* TestsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestsAppDelegate.h; sourceTree = "<group>"; };
+		4C0A53DE12FE435300318BBD /* TestsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestsAppDelegate.m; sourceTree = "<group>"; };
+		4C0A53E112FE435300318BBD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4C0A53E712FE43B100318BBD /* GHUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnit.framework; path = Library/Frameworks/GHUnit.framework; sourceTree = SDKROOT; };
+		4C0A53ED12FE440900318BBD /* GHUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHUnitTestMain.m; path = ../GHUnitTestMain.m; sourceTree = "<group>"; };
 		4C0DD46112E27973005670A2 /* iTunes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunes.h; sourceTree = "<group>"; };
 		4C0DD46212E27997005670A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C0DD46612E279AB005670A2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -116,14 +170,6 @@
 		4C5116B212F9173E00B0F694 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4C5116B812F9177800B0F694 /* LyricDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricDownloader.h; sourceTree = "<group>"; };
 		4C5116B912F9177800B0F694 /* LyricDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricDownloader.m; sourceTree = "<group>"; };
-		4C5EE78F12FE1DE1005B33B3 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C5EE79112FE1DE1005B33B3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		4C5EE79412FE1DE1005B33B3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		4C5EE79512FE1DE1005B33B3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		4C5EE79612FE1DE1005B33B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4C5EE79912FE1DE1005B33B3 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		4C5EE79B12FE1DE1005B33B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4C5EE79D12FE1DE1005B33B3 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		4C5EE79E12FE1DE1005B33B3 /* Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tests.h; sourceTree = "<group>"; };
 		4C5EE7A012FE1DE1005B33B3 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		4CE1AE8712FB67BA00B742D5 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
@@ -136,11 +182,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C5EE78B12FE1DE1005B33B3 /* Frameworks */ = {
+		4C0A53C512FE435200318BBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C5EE79212FE1DE1005B33B3 /* Cocoa.framework in Frameworks */,
+				4C0A53E812FE43B100318BBD /* GHUnit.framework in Frameworks */,
+				4C0A53CC12FE435200318BBD /* Cocoa.framework in Frameworks */,
+				4C0A540412FE469100318BBD /* ScriptingBridge.framework in Frameworks */,
+				4C0A540512FE469100318BBD /* Foundation.framework in Frameworks */,
+				4C0A540612FE469100318BBD /* AppKit.framework in Frameworks */,
+				4C0A540712FE469100318BBD /* CoreServices.framework in Frameworks */,
+				4C0A540812FE469100318BBD /* SystemConfiguration.framework in Frameworks */,
+				4C0A540A12FE469C00318BBD /* libxml2.2.dylib in Frameworks */,
+				4C0A540B12FE469C00318BBD /* libz.1.2.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +209,7 @@
 				4C51169612F916A200B0F694 /* libxml2.2.dylib in Frameworks */,
 				4C51169812F916A200B0F694 /* libz.1.2.3.dylib in Frameworks */,
 				4C5116B312F9173E00B0F694 /* SystemConfiguration.framework in Frameworks */,
+				4C0A540912FE469400318BBD /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,15 +219,11 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4C0A53F012FE447500318BBD /* Models */,
 				256AC3D80F4B6AC300CF3369 /* LyricFinderAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* LyricFinderAppDelegate.m */,
 				4C0DD48512E28183005670A2 /* Controller.h */,
 				4C0DD48612E28183005670A2 /* Controller.m */,
-				4C33E2A912E3BBDF00EB2080 /* LyricRequest.h */,
-				4C33E2AA12E3BBDF00EB2080 /* LyricRequest.m */,
-				4C5116B812F9177800B0F694 /* LyricDownloader.h */,
-				4C5116B912F9177800B0F694 /* LyricDownloader.m */,
-				4C0DD46112E27973005670A2 /* iTunes.h */,
 				4CE1AED212FB774200B742D5 /* NSString+IG_URLEscape.h */,
 				4CE1AED312FB774200B742D5 /* NSString+IG_URLEscape.m */,
 			);
@@ -190,6 +241,7 @@
 		29B97314FDCFA39411CA2CEA /* Lyrical */ = {
 			isa = PBXGroup;
 			children = (
+				4C0A53E712FE43B100318BBD /* GHUnit.framework */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				4C5EE79712FE1DE1005B33B3 /* Tests */,
@@ -201,7 +253,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Stuff */ = {
 			isa = PBXGroup;
 			children = (
-				4C5EE7A612FE1DEC005B33B3 /* Testing Support */,
+				4C0A53EB12FE43E400318BBD /* Testing Support */,
 				4C5115A012F9158400B0F694 /* Dependencies */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				4C332AD212FA224E00651F67 /* ColorLog.m */,
@@ -242,6 +294,70 @@
 				4C13E86712FE0D3000EE41B5 /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C0A53CA12FE435200318BBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C0A53CB12FE435200318BBD /* Cocoa.framework */,
+				4C0A53CD12FE435200318BBD /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C0A53CD12FE435200318BBD /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C0A53CE12FE435200318BBD /* AppKit.framework */,
+				4C0A53CF12FE435200318BBD /* CoreData.framework */,
+				4C0A53D012FE435200318BBD /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4C0A53D112FE435200318BBD /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4C0A53DD12FE435300318BBD /* TestsAppDelegate.h */,
+				4C0A53DE12FE435300318BBD /* TestsAppDelegate.m */,
+				4C0A53E012FE435300318BBD /* MainMenu.xib */,
+				4C0A53D212FE435300318BBD /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		4C0A53D212FE435300318BBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C0A53D312FE435300318BBD /* Tests-Info.plist */,
+				4C0A53D412FE435300318BBD /* InfoPlist.strings */,
+				4C0A53ED12FE440900318BBD /* GHUnitTestMain.m */,
+				4C0A53D712FE435300318BBD /* Tests-Prefix.pch */,
+				4C0A53DA12FE435300318BBD /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C0A53EB12FE43E400318BBD /* Testing Support */ = {
+			isa = PBXGroup;
+			children = (
+				4C0A53C812FE435200318BBD /* Tests.app */,
+				4C0A53D112FE435200318BBD /* Tests */,
+				4C0A53CA12FE435200318BBD /* Frameworks */,
+			);
+			name = "Testing Support";
+			sourceTree = "<group>";
+		};
+		4C0A53F012FE447500318BBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4C33E2A912E3BBDF00EB2080 /* LyricRequest.h */,
+				4C33E2AA12E3BBDF00EB2080 /* LyricRequest.m */,
+				4C5116B812F9177800B0F694 /* LyricDownloader.h */,
+				4C5116B912F9177800B0F694 /* LyricDownloader.m */,
+				4C0DD46112E27973005670A2 /* iTunes.h */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		4C13E86712FE0D3000EE41B5 /* Other Frameworks */ = {
@@ -322,25 +438,6 @@
 			name = TouchJSON;
 			sourceTree = "<group>";
 		};
-		4C5EE79012FE1DE1005B33B3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4C5EE79112FE1DE1005B33B3 /* Cocoa.framework */,
-				4C5EE79312FE1DE1005B33B3 /* Other Frameworks */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4C5EE79312FE1DE1005B33B3 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4C5EE79412FE1DE1005B33B3 /* AppKit.framework */,
-				4C5EE79512FE1DE1005B33B3 /* CoreData.framework */,
-				4C5EE79612FE1DE1005B33B3 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
 		4C5EE79712FE1DE1005B33B3 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,47 +447,26 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		4C5EE79812FE1DE1005B33B3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4C5EE79912FE1DE1005B33B3 /* Tests-Info.plist */,
-				4C5EE79A12FE1DE1005B33B3 /* InfoPlist.strings */,
-				4C5EE79D12FE1DE1005B33B3 /* Tests-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		4C5EE7A612FE1DEC005B33B3 /* Testing Support */ = {
-			isa = PBXGroup;
-			children = (
-				4C5EE79812FE1DE1005B33B3 /* Supporting Files */,
-				4C5EE78F12FE1DE1005B33B3 /* Tests.octest */,
-				4C5EE79012FE1DE1005B33B3 /* Frameworks */,
-			);
-			name = "Testing Support";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C5EE78E12FE1DE1005B33B3 /* Tests */ = {
+		4C0A53C712FE435200318BBD /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C5EE7A212FE1DE1005B33B3 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildConfigurationList = 4C0A53E312FE435300318BBD /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
-				4C5EE78A12FE1DE1005B33B3 /* Sources */,
-				4C5EE78B12FE1DE1005B33B3 /* Frameworks */,
-				4C5EE78C12FE1DE1005B33B3 /* Resources */,
-				4C5EE78D12FE1DE1005B33B3 /* ShellScript */,
+				4C0A53C412FE435200318BBD /* Sources */,
+				4C0A53C512FE435200318BBD /* Frameworks */,
+				4C0A53C612FE435200318BBD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4C0A53EA12FE43BB00318BBD /* PBXTargetDependency */,
 			);
 			name = Tests;
 			productName = Tests;
-			productReference = 4C5EE78F12FE1DE1005B33B3 /* Tests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 4C0A53C812FE435200318BBD /* Tests.app */;
+			productType = "com.apple.product-type.application";
 		};
 		8D1107260486CEB800E47090 /* Lyric Finder */ = {
 			isa = PBXNativeTarget;
@@ -432,18 +508,19 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* Lyric Finder */,
-				4C5EE78E12FE1DE1005B33B3 /* Tests */,
+				4C0A53C712FE435200318BBD /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4C5EE78C12FE1DE1005B33B3 /* Resources */ = {
+		4C0A53C612FE435200318BBD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C5EE79C12FE1DE1005B33B3 /* InfoPlist.strings in Resources */,
-				4C5EE79F12FE1DE1005B33B3 /* Tests.h in Resources */,
+				4C0A53D612FE435300318BBD /* InfoPlist.strings in Resources */,
+				4C0A53DC12FE435300318BBD /* Credits.rtf in Resources */,
+				4C0A53E212FE435300318BBD /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,28 +540,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4C5EE78D12FE1DE1005B33B3 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		4C5EE78A12FE1DE1005B33B3 /* Sources */ = {
+		4C0A53C412FE435200318BBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C5EE7A112FE1DE1005B33B3 /* Tests.m in Sources */,
+				4C0A53DF12FE435300318BBD /* TestsAppDelegate.m in Sources */,
+				4C0A53EF12FE440900318BBD /* GHUnitTestMain.m in Sources */,
+				4C0A53F112FE448D00318BBD /* LyricRequest.m in Sources */,
+				4C0A53F212FE449000318BBD /* LyricDownloader.m in Sources */,
+				4C0A53F312FE459400318BBD /* ColorLog.m in Sources */,
+				4C0A53F412FE45F400318BBD /* RegexKitLite.m in Sources */,
+				4C0A53F512FE45F400318BBD /* CDataScanner_Extensions.m in Sources */,
+				4C0A53F612FE45F400318BBD /* CDataScanner.m in Sources */,
+				4C0A53F712FE45F400318BBD /* CJSONDeserializer.m in Sources */,
+				4C0A53F812FE45F400318BBD /* CJSONScanner.m in Sources */,
+				4C0A53F912FE45F400318BBD /* CJSONSerializer.m in Sources */,
+				4C0A53FA12FE45F400318BBD /* NSDictionary_JSONExtensions.m in Sources */,
+				4C0A53FB12FE460100318BBD /* HTMLNode.m in Sources */,
+				4C0A53FC12FE460100318BBD /* HTMLParser.m in Sources */,
+				4C0A53FD12FE460100318BBD /* ASIDataCompressor.m in Sources */,
+				4C0A53FE12FE460100318BBD /* ASIDataDecompressor.m in Sources */,
+				4C0A53FF12FE460100318BBD /* ASIDownloadCache.m in Sources */,
+				4C0A540012FE460100318BBD /* ASIFormDataRequest.m in Sources */,
+				4C0A540112FE460100318BBD /* ASIHTTPRequest.m in Sources */,
+				4C0A540212FE460100318BBD /* ASIInputStream.m in Sources */,
+				4C0A540312FE460100318BBD /* ASINetworkQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +601,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4C0A53EA12FE43BB00318BBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* Lyric Finder */;
+			targetProxy = 4C0A53E912FE43BB00318BBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -537,17 +626,88 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
-		4C5EE79A12FE1DE1005B33B3 /* InfoPlist.strings */ = {
+		4C0A53D412FE435300318BBD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C5EE79B12FE1DE1005B33B3 /* en */,
+				4C0A53D512FE435300318BBD /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4C0A53DA12FE435300318BBD /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C0A53DB12FE435300318BBD /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4C0A53E012FE435300318BBD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C0A53E112FE435300318BBD /* en */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4C0A53E412FE435300318BBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4C0A53E512FE435300318BBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4C0A53E612FE435300318BBD /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = "App Store";
+		};
 		4C33E49712E4AA6200EB2080 /* App Store */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -556,7 +716,9 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = "-licucore";
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
 				VALID_ARCHS = "i386 x86_64";
@@ -578,85 +740,6 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = "Lyric Finder";
-			};
-			name = "App Store";
-		};
-		4C5EE7A312FE1DE1005B33B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(CONFIGURATION_BUILD_DIR)/Lyric Finder.app/Contents/MacOS/Lyric Finder";
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		4C5EE7A412FE1DE1005B33B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(CONFIGURATION_BUILD_DIR)/Lyric Finder.app/Contents/MacOS/Lyric Finder";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
-		4C5EE7A512FE1DE1005B33B3 /* App Store */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(CONFIGURATION_BUILD_DIR)/Lyric Finder.app/Contents/MacOS/Lyric Finder";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = "App Store";
 		};
@@ -705,8 +788,10 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-licucore";
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
 			};
@@ -719,7 +804,9 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = "-licucore";
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
 			};
@@ -728,12 +815,12 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C5EE7A212FE1DE1005B33B3 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+		4C0A53E312FE435300318BBD /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C5EE7A312FE1DE1005B33B3 /* Debug */,
-				4C5EE7A412FE1DE1005B33B3 /* Release */,
-				4C5EE7A512FE1DE1005B33B3 /* App Store */,
+				4C0A53E412FE435300318BBD /* Debug */,
+				4C0A53E512FE435300318BBD /* Release */,
+				4C0A53E612FE435300318BBD /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
