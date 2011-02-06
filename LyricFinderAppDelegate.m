@@ -27,10 +27,24 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	[window center];
     
-    [ASIHTTPRequest setDefaultTimeOutSeconds:10];
+    [ASIHTTPRequest setDefaultTimeOutSeconds:5];
 	
 	controller = [[Controller alloc] init];
 	controller.delegate = self;
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    
+        NSURL *url = [NSURL URLWithString:@"http://lyricfinderapp.com/status.html"];
+        NSString *contents = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+        contents = [contents stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        
+        DLog(@"contents: '%@'",contents);
+        if(![contents isEqualToString:@"OK"]) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[NSWorkspace sharedWorkspace] openURL:url];
+            });
+        }
+    });
 }
 
 -(IBAction)buttonPressed:(id)sender {
