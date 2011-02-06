@@ -82,6 +82,7 @@
 		4C8852EE12FE621D002B6586 /* LyricsDotCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8852EC12FE621C002B6586 /* LyricsDotCom.m */; };
 		4C8852F112FE6562002B6586 /* HeuristicScraper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8852F012FE655E002B6586 /* HeuristicScraper.m */; };
 		4C8852F212FE6562002B6586 /* HeuristicScraper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8852F012FE655E002B6586 /* HeuristicScraper.m */; };
+		4CA670AC12FF435700331383 /* RatingRequest.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA670AB12FF435700331383 /* RatingRequest.png */; };
 		4CD43A9A12FE691300C7DF0C /* Bing.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD43A9912FE691300C7DF0C /* Bing.m */; };
 		4CD43A9B12FE691300C7DF0C /* Bing.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD43A9912FE691300C7DF0C /* Bing.m */; };
 		4CE1AE8A12FB67BA00B742D5 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE1AE8712FB67BA00B742D5 /* start.png */; };
@@ -192,6 +193,7 @@
 		4C8852EC12FE621C002B6586 /* LyricsDotCom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricsDotCom.m; sourceTree = "<group>"; };
 		4C8852EF12FE655C002B6586 /* HeuristicScraper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeuristicScraper.h; sourceTree = "<group>"; };
 		4C8852F012FE655E002B6586 /* HeuristicScraper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeuristicScraper.m; sourceTree = "<group>"; };
+		4CA670AB12FF435700331383 /* RatingRequest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RatingRequest.png; sourceTree = "<group>"; };
 		4CD43A9812FE691200C7DF0C /* Bing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bing.h; sourceTree = "<group>"; };
 		4CD43A9912FE691300C7DF0C /* Bing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bing.m; sourceTree = "<group>"; };
 		4CE1AE8712FB67BA00B742D5 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4CA670AB12FF435700331383 /* RatingRequest.png */,
 				8D1107310486CEB800E47090 /* Lyric Finder-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -561,6 +564,7 @@
 				4CE1AE8A12FB67BA00B742D5 /* start.png in Resources */,
 				4CE1AE8B12FB67BA00B742D5 /* start_pressed.png in Resources */,
 				4CE1AE8C12FB67BA00B742D5 /* start_hover.png in Resources */,
+				4CA670AC12FF435700331383 /* RatingRequest.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,7 @@
 
 
 @implementation LyricFinderAppDelegate
-@synthesize window, controller, progressIndicator, progressMessage, infoMessage, button, lowerInfoMessage;
+@synthesize window, controller, progressIndicator, progressMessage, infoMessage, button, lowerInfoMessage, ratingRequest, ratingButton;
 
 -(void)dealloc {
 	[controller release];
@@ -26,11 +26,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	[window center];
-    
-    [ASIHTTPRequest setDefaultTimeOutSeconds:5];
-	
-	controller = [[Controller alloc] init];
-	controller.delegate = self;
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     
@@ -56,6 +51,9 @@
 	[progressIndicator setHidden:NO];
 	[progressMessage setHidden:NO];
 	
+	controller = [[Controller alloc] init];
+	controller.delegate = self;
+    
 	[controller beginWorking];
 }
 
@@ -84,7 +82,24 @@
 		int total = controller.progressTotal;
 		[lowerInfoMessage setStringValue:[NSString stringWithFormat:@"Found lyrics for %i of %i songs (%.0f%%).",success,total,((double)success*100)/(total==0 ? 1 : total)]];
 		[lowerInfoMessage setHidden:NO];
+        
+        [ratingRequest setHidden:NO];
+        [ratingButton setHidden:NO];
 	}
+}
+
+- (IBAction)ratingButtonPressed:(id)sender {
+    NSString *urlString = @"macappstore://itunes.apple.com/us/app/lyric-finder/id415321782?mt=12";
+    
+    // Mac App Store URLs need to be opened twice, once and then again four seconds later (Apple's site uses two seconds, but it didn't always work for me). 
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:urlString]];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        sleep(4);
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:urlString]];     
+        });
+    });
 }
 
 @end

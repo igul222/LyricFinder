@@ -17,6 +17,8 @@
 	NSTextField *infoMessage;
 	NSButton *button;
 	NSTextField *lowerInfoMessage;
+    NSImageView *ratingRequest;
+    NSButton *ratingButton;
 }
 @property(assign) IBOutlet NSWindow *window;
 @property(retain) Controller *controller;
@@ -25,9 +27,12 @@
 @property(assign) IBOutlet NSTextField *infoMessage;
 @property(assign) IBOutlet NSButton *button;
 @property(assign) IBOutlet NSTextField *lowerInfoMessage;
+@property(assign) IBOutlet NSImageView *ratingRequest;
+@property(assign) IBOutlet NSButton *ratingButton;
 
 -(void)libraryScanFinished;
 -(void)lyricRequestFinished;
 -(IBAction)buttonPressed:(id)sender;
+- (IBAction)ratingButtonPressed:(id)sender;
 
 @end
