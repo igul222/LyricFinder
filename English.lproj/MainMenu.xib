@@ -1348,7 +1348,7 @@
 									<string>NeXT TIFF v4.0 pasteboard type</string>
 								</object>
 							</object>
-							<string key="NSFrameSize">{502, 232}</string>
+							<string key="NSFrameSize">{459, 232}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="522988658"/>
@@ -1562,19 +1562,15 @@
 								<int key="NSCellFlags">-2080244224</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents">Rate Lyric Finder on the Mac App Store</string>
-								<object class="NSFont" key="NSSupport">
-									<string key="NSName">LucidaGrande</string>
-									<double key="NSSize">12</double>
-									<int key="NSfFlags">4883</int>
-								</object>
-								<reference key="NSControlView" ref="533911029"/>
-								<int key="NSButtonFlags">-2038021889</int>
-								<int key="NSButtonFlags2">164</int>
-								<object class="NSFont" key="NSAlternateImage">
+								<object class="NSFont" key="NSSupport" id="240521072">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">12</double>
 									<int key="NSfFlags">16</int>
 								</object>
+								<reference key="NSControlView" ref="533911029"/>
+								<int key="NSButtonFlags">-2038021889</int>
+								<int key="NSButtonFlags2">164</int>
+								<reference key="NSAlternateImage" ref="240521072"/>
 								<string key="NSAlternateContents"/>
 								<string key="NSKeyEquivalent"/>
 								<int key="NSPeriodicDelay">400</int>

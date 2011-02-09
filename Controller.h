@@ -14,12 +14,14 @@
 	NSInteger progressFinished;
 	NSInteger progressTotal;
 	NSInteger successfulRequests;
+    NSInteger totalSuccesses;
 	id delegate;
 }
 @property NSInteger totalSongs;
 @property NSInteger progressFinished;
 @property NSInteger progressTotal;
 @property NSInteger successfulRequests;
+@property NSInteger totalSuccesses;
 @property(assign) id delegate;
 
 -(void)beginWorking;

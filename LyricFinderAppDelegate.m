@@ -78,8 +78,8 @@
 		[infoMessage setFont:[NSFont boldSystemFontOfSize:13.0]];
 		[infoMessage setHidden:NO];
 
-		int success = controller.successfulRequests;
-		int total = controller.progressTotal;
+		int success = controller.totalSuccesses;
+		int total = controller.totalSongs;
 		[lowerInfoMessage setStringValue:[NSString stringWithFormat:@"Found lyrics for %i of %i songs (%.0f%%).",success,total,((double)success*100)/(total==0 ? 1 : total)]];
 		[lowerInfoMessage setHidden:NO];
         
