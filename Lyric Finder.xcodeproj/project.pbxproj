@@ -54,6 +54,8 @@
 		4C33E2AB12E3BBDF00EB2080 /* LyricRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C33E2AA12E3BBDF00EB2080 /* LyricRequest.m */; };
 		4C33E44E12E4A0DB00EB2080 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C33E44D12E4A0DB00EB2080 /* background.png */; };
 		4C33E47912E4A5D600EB2080 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C33E47812E4A5D600EB2080 /* Icon.icns */; };
+		4C49D46A13022FC400FF4D36 /* GlobalLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C49D46913022FC300FF4D36 /* GlobalLogger.m */; };
+		4C49D46B13022FC400FF4D36 /* GlobalLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C49D46913022FC300FF4D36 /* GlobalLogger.m */; };
 		4C49EFC512FE7B4C008DB421 /* HindiLyrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C49EFC412FE7B4C008DB421 /* HindiLyrix.m */; };
 		4C49EFC612FE7B55008DB421 /* HindiLyrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C49EFC412FE7B4C008DB421 /* HindiLyrix.m */; };
 		4C51166C12F915C500B0F694 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51166112F915C500B0F694 /* CDataScanner_Extensions.m */; };
@@ -142,6 +144,8 @@
 		4C33E2AA12E3BBDF00EB2080 /* LyricRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricRequest.m; sourceTree = "<group>"; };
 		4C33E44D12E4A0DB00EB2080 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		4C33E47812E4A5D600EB2080 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		4C49D46813022FC300FF4D36 /* GlobalLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalLogger.h; sourceTree = "<group>"; };
+		4C49D46913022FC300FF4D36 /* GlobalLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalLogger.m; sourceTree = "<group>"; };
 		4C49EFC312FE7B4C008DB421 /* HindiLyrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HindiLyrix.h; sourceTree = "<group>"; };
 		4C49EFC412FE7B4C008DB421 /* HindiLyrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HindiLyrix.m; sourceTree = "<group>"; };
 		4C51166012F915C500B0F694 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
@@ -252,6 +256,8 @@
 				4C0DD48612E28183005670A2 /* Controller.m */,
 				4C33E2A912E3BBDF00EB2080 /* LyricRequest.h */,
 				4C33E2AA12E3BBDF00EB2080 /* LyricRequest.m */,
+				4C49D46813022FC300FF4D36 /* GlobalLogger.h */,
+				4C49D46913022FC300FF4D36 /* GlobalLogger.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -604,6 +610,7 @@
 				4CD43A9B12FE691300C7DF0C /* Bing.m in Sources */,
 				4C49EFC612FE7B55008DB421 /* HindiLyrix.m in Sources */,
 				4CE3B86E12FF0959009383A0 /* LyricsMode.m in Sources */,
+				4C49D46B13022FC400FF4D36 /* GlobalLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,6 +647,7 @@
 				4CD43A9A12FE691300C7DF0C /* Bing.m in Sources */,
 				4C49EFC512FE7B4C008DB421 /* HindiLyrix.m in Sources */,
 				4CE3B86D12FF06B9009383A0 /* LyricsMode.m in Sources */,
+				4C49D46A13022FC400FF4D36 /* GlobalLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

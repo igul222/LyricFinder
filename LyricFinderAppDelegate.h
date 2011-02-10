@@ -19,6 +19,8 @@
 	NSTextField *lowerInfoMessage;
     NSImageView *ratingRequest;
     NSButton *ratingButton;
+    NSTextView *logView;
+    NSScrollView *logScrollView;
 }
 @property(assign) IBOutlet NSWindow *window;
 @property(retain) Controller *controller;
@@ -29,6 +31,8 @@
 @property(assign) IBOutlet NSTextField *lowerInfoMessage;
 @property(assign) IBOutlet NSImageView *ratingRequest;
 @property(assign) IBOutlet NSButton *ratingButton;
+@property (assign) IBOutlet NSTextView *logView;
+@property (assign) IBOutlet NSScrollView *logScrollView;
 
 -(void)libraryScanFinished;
 -(void)lyricRequestFinished;

@@ -17,6 +17,8 @@
 
 
 @implementation LyricFinderAppDelegate
+@synthesize logView;
+@synthesize logScrollView;
 @synthesize window, controller, progressIndicator, progressMessage, infoMessage, button, lowerInfoMessage, ratingRequest, ratingButton;
 
 -(void)dealloc {
@@ -85,6 +87,12 @@
         
         [ratingRequest setHidden:NO];
         [ratingButton setHidden:NO];
+        
+        NSLog(@"FINISH");
+#ifdef DEBUG
+        [logScrollView setHidden:NO];
+        [logView setString:[GlobalLogger logString]];
+#endif
 	}
 }
 

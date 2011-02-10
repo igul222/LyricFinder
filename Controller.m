@@ -58,8 +58,11 @@
 	for(iTunesPlaylist *playlist in [librarySource playlists]) {
 		DLog(@"Found playlist: [playlist name]==%@",[playlist name]);
         
-        if([[playlist name] isEqualToString:@"Music"]) {
-            DLog(@"[playlist name]==Music; using this playlist.");
+        // TODO: make this truly locale-independent
+        if([[playlist name] isEqualToString:@"Music"] || 
+           [[playlist name] isEqualToString:@"Musique"] ||
+           [[playlist name] isEqualToString:@"Música"]) {
+            DLog(@"[playlist name]==(Music|Musique|Música); using this playlist.");
 			musicPlaylist = playlist;
 		}
 	}
@@ -112,7 +115,7 @@
             [request fulfill];
 			
 			dispatch_sync(dispatch_get_main_queue(), ^{
-				BOOL result = YES;[request apply];
+				BOOL result = [request apply];
 				[self lyricRequestFinishedSuccessfully:result];
 			});
 		}
