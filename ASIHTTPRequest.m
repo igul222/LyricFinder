@@ -3062,7 +3062,8 @@ static NSOperationQueue *sharedQueue = nil;
 		}
 		
 		[self setTotalBytesRead:[self totalBytesRead]+bytesRead];
-		[self setLastActivityTime:[NSDate date]];
+        // Ishaan's mod: activity shouldn't delay the timeout at all!
+		//[self setLastActivityTime:[NSDate date]];
 
 		// For bandwidth measurement / throttling
 		[ASIHTTPRequest incrementBandwidthUsedInLastSecond:bytesRead];

@@ -9,8 +9,7 @@
 #ifdef DEBUG
 #   import "GlobalLogger.h"
 #	import "ColorLog.h"
-#   define DLog(fmt, ...) [[GlobalLogger logString] appendFormat:(@"%s [Line %d] " fmt @"\n"), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__];
-//#	define DLog(fmt, ...) NSLogColor(([NSString stringWithFormat:@"%@%@%@",LBCL_BLACK,NSLogColorFromInput([NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__]),@"%s [Line %d] " fmt LCL_RESET]), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#   define DLog(fmt, ...) {[[GlobalLogger logString] appendFormat:(@"%s [Line %d] " fmt @"\n"), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__];NSLogColor(([NSString stringWithFormat:@"%@%@%@",LBCL_BLACK,NSLogColorFromInput([NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__]),@"%s [Line %d] " fmt LCL_RESET]), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
 #else
 #	define DLog(...) {}
 #endif
